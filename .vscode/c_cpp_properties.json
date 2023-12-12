@@ -1,0 +1,24 @@
+{
+    "env" : {
+        "pspsdk": "D:/Software/env/sdk/pspsdk"
+    },
+    "configurations": [
+        {
+            "name": "psp",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${pspsdk}/psp/include/**",
+                "${pspsdk}/psp/sdk/include/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "ENABLE_FILELOG"
+            ],
+            "compilerPath": "${pspsdk}/psp/bin/gcc.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-gcc-x86"
+        }
+    ],
+    "version": 4
+}

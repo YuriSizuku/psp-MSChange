@@ -1,0 +1,6 @@
+sample
+build
+*.o
+*.self
+*.bin
+*.prx
