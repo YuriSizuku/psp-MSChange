@@ -158,7 +158,7 @@ int thread_main(SceSize args, void *argp)
                 else if (pad.Buttons & PSP_CTRL_DOWN) ms_change(MS_CB_EVENT_EJECTED);
             }
         }
-        sceKernelDelayThread(50000); // 50ms, need to add delay, or exit crash
+        sceKernelDelayThread(20000); // 20ms, need to add delay, or exit crash
     }
     return 0;
 }
