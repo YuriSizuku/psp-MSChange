@@ -2,9 +2,9 @@
 
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/YuriSizuku/psp-MSChange/build_mschange.yml)  
 
-For spoofing some game checking (such as "xxxのディスクがセットされていません" error),  this plugin can emulate inserting or removing Memory stick with key combo.  
+For spoofing some games checking (such as "xxxのディスクがセットされていません" error),  this plugin can emulate inserting or removing Memory stick with key combo.  
 
-The project is developed on `PSP3000 6.60proC2 CFW`, also tested on `PSV2000 Adrenaline 6.61pro`.  
+The project is developed on `PSP3000 6.60proC2 CFW`, and also tested on `PSV2000 Adrenaline 6.61pro`.  
 
 ## Usage  
 
@@ -12,7 +12,7 @@ The project is developed on `PSP3000 6.60proC2 CFW`, also tested on `PSV2000 Adr
 2. Start a game, accroding to the game instruction  
    `select+up` to emulate inserting memory stick  
    `select+down` to emulate removing memory stick  
-3. After that, most of games creates a save on the memorystick, then you can disable this plugin
+3. After that, most of games create a save on the memorystick, then you can disable this plugin
 
 ## Build
 
@@ -24,17 +24,17 @@ The project is developed on `PSP3000 6.60proC2 CFW`, also tested on `PSV2000 Adr
 # example of build with pspsdk docker
 docker pull ghcr.io/pspdev/pspsdk:latest
 docker run -d -it --rm -v $(pwd):/project --name pspsdk_run ghcr.io/pspdev/pspsdk
-docker exec -i pspsdk_run bash -c "cd /project/script && export PSPSDK=$PSPDEV && ./build_mschange.sh"
+docker exec -i pspsdk_run bash -c "cd /project/script && export PSPSDK=$PSPDEV && chmod +x ./build_mschange.sh && ./build_mschange.sh"
 ```
 
-## Tetesed Games  
+## Tested Games  
 
 ULJM06404 ヴァルプルガの詩  
 ULJM06390 Flowers1  
 
 ## Known Issue
 
-* ~~Game exit crash~~, solved by adding delay in the main thread
+* ~~Game exit crash~~, fixed by adding delay in the main thread
 
 ## Reference  
 
